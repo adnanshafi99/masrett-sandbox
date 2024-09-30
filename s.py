@@ -36,7 +36,7 @@ def get_prediction():
 
 # Run Flask app in a separate thread
 def run_flask():
-    app.run(port=2568)
+    app.run()
 
 # Start Flask in a separate thread
 threading.Thread(target=run_flask).start()
